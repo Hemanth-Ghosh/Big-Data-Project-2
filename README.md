@@ -11,10 +11,8 @@ An analysis on **RAWG API**.
 
 * Pyspark    [3.1.2]
 * Spark      [3.1.2]
-* Spark SQL  []
-* Hadoop     [3.0]
-* Yarn       []
-* HDFS       []
+* Spark SQL  
+* Pandas     [1.3.1]
 * Python     [3.8]
 * Git/GitHub []
   

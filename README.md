@@ -1,5 +1,5 @@
 # Big-Data-Python-Project-2 
-by Hemanth Ghosh
+###### by Hemanth Ghosh
 
 An analysis on RAWG API.
 
@@ -27,4 +27,4 @@ Git/GitHub
 
 ## DataSet Used
 
-[https://api.rawg.io/docs/](#RAWG Dataset)
+[RAWG Dataset](#https://api.rawg.io/docs/)

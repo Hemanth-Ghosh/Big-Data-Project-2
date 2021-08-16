@@ -27,4 +27,4 @@ An analysis on **RAWG API**.
 
 ## DataSet Used
 
-    [RAWG Dataset](https://api.rawg.io/docs/)
+   [RAWG Dataset](https://api.rawg.io/docs/)

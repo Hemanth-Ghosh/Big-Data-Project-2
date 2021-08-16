@@ -1,8 +1,9 @@
 # Big-Data-Python-Project-2 
 ###### by Hemanth Ghosh
 
-An analysis on RAWG API.
-RAWG is the largest video game database and game discovery service with 500,000+ games data.
+An analysis on **RAWG API**.
+
+**RAWG** is the largest **Video Game Database** and game discovery service with **500,000+** games data.
 
 
 

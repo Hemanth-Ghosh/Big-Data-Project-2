@@ -2,21 +2,20 @@
 ###### by Hemanth Ghosh
 
 An analysis on RAWG API.
-
 RAWG is the largest video game database and game discovery service with 500,000+ games data.
 
 
 
 ## Tech Stack
 
-Pyspark
-Spark
-Spark SQL
-Hadoop
-Yarn
-HDFS
-Python 3.8
-Git/GitHub
+* Pyspark
+* Spark
+* Spark SQL
+* Hadoop
+* Yarn
+* HDFS
+* Python 3.8
+* Git/GitHub
   
 ## Problem Statements
   1. Which is the top most rated games accross all platform.

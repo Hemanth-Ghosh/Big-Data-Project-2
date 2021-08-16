@@ -9,14 +9,14 @@ An analysis on **RAWG API**.
 
 ## Tech Stack
 
-* Pyspark
-* Spark
-* Spark SQL
-* Hadoop
-* Yarn
-* HDFS
-* Python 3.8
-* Git/GitHub
+* Pyspark    [3.1.2]
+* Spark      [3.1.2]
+* Spark SQL  []
+* Hadoop     [3.0]
+* Yarn       []
+* HDFS       []
+* Python     [3.8]
+* Git/GitHub []
   
 ## Problem Statements
   1. Which is the top most rated games accross all platform.

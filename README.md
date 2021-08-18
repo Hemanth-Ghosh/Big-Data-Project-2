@@ -79,4 +79,6 @@ Each row contains information about one game. There are several columns that hav
 
 ## DataSet Used
 
-   [RAWG Dataset](https://api.rawg.io/docs/)
+   [RAWG Dataset Document](https://api.rawg.io/docs/)
+   
+   [RAWG Dataset](https://www.kaggle.com/jummyegg/rawg-game-dataset)

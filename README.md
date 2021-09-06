@@ -83,16 +83,13 @@ Each row contains information about one game. There are several columns that hav
 ## Contributors
 * Devansh Sharma
 * Divya Reddy
-* Rajkumar
+* [Rajkumar](https://github.com/rajoffl)
 * Sailash R
 
 ## Dataset Used
-
-   [RAWG Dataset Document](https://api.rawg.io/docs/)
-   
-   [RAWG Dataset](https://www.kaggle.com/jummyegg/rawg-game-dataset)
+* [RAWG Dataset Document](https://api.rawg.io/docs/)
+* [RAWG Dataset](https://www.kaggle.com/jummyegg/rawg-game-dataset)
 
 ## License
 This project uses the following license:
-
-  [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+[MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)

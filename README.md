@@ -75,6 +75,7 @@ Each row contains information about one game. There are several columns that hav
 
 ## Getting Started
 * Install pyspark, findspark.
+
    pip install pyspark
    pip install findspark
   

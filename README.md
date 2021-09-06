@@ -73,6 +73,16 @@ Each row contains information about one game. There are several columns that hav
 * added_status_dropped: Number of RAWG users had the game as "Played but not beaten"
 * added_status_playing: Number of RAWG users had the game as "Playing"
 
+## Getting Started
+* Install pyspark, findspark.
+  
+* Download spark and set environmentl variables.
+
+* Import pyspark,findspark.
+
+*  Create SparkSession.
+
+*  Load data into spark.
 ## Problem Statements
   1. Which is the top most rated games accross all platform.
   2. Which game developer has released the most number of games.

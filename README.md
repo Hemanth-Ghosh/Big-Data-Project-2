@@ -91,11 +91,10 @@ Each row contains information about one game. There are several columns that hav
 *  Create SparkSession and SparkContext
 
       spark = SparkSession.builder.appName("app").getOrCreate()
-      
       sc = spark.sparkContext
 
 *  Load data into Spark DF
-*  
+  
       pathToRead = r"C:\Users\heman\downloads\game_info.csv"
       
       raw_df = spark.read.csv(pathToRead,header=True,inferSchema=True)

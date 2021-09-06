@@ -1,13 +1,16 @@
 # RAWG Data Analysis using Spark
 ###### by Hemanth Ghosh
 
+
+## Project Description
+
 An analysis on **RAWG API**.
 
 **RAWG** is the largest **Video Game Database** and game discovery service with **500,000+** games data.
 
 
 
-## Tech Stack
+## Technologies Used
 
 
 * **Apache Spark [3.1.2]** 
@@ -77,8 +80,17 @@ Each row contains information about one game. There are several columns that hav
   4. Number of games released per year 
   5. Games with longest updation time
 
-## DataSet Used
+## Contributors
+* Devansh Sharma
+* Divya Reddy
+* Rajkumar
+* Sailash R
+
+## Dataset Used
 
    [RAWG Dataset Document](https://api.rawg.io/docs/)
    
    [RAWG Dataset](https://www.kaggle.com/jummyegg/rawg-game-dataset)
+
+## License
+[MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)

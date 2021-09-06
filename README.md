@@ -94,8 +94,8 @@ Each row contains information about one game. There are several columns that hav
       
       sc = spark.sparkContext
 
-*  Load data into Spark DF.
-      
+*  Load data into Spark DF
+*  
       pathToRead = r"C:\Users\heman\downloads\game_info.csv"
       
       raw_df = spark.read.csv(pathToRead,header=True,inferSchema=True)

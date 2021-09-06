@@ -73,6 +73,14 @@ Each row contains information about one game. There are several columns that hav
 * added_status_dropped: Number of RAWG users had the game as "Played but not beaten"
 * added_status_playing: Number of RAWG users had the game as "Playing"
 
+## Feature (Problem Statements)
+
+  1. Which is the top most rated games accross all platform.
+  2. Which game developer has released the most number of games.
+  3. Which game genres has most games.
+  4. Number of games released per year 
+  5. Games with longest updation time
+  
 ## Getting Started
 * Install pyspark, findspark.
 
@@ -115,12 +123,6 @@ Each row contains information about one game. There are several columns that hav
       where num = 1
       """).show(truncate=False)
       
-## Problem Statements
-  1. Which is the top most rated games accross all platform.
-  2. Which game developer has released the most number of games.
-  3. Which game genres has most games.
-  4. Number of games released per year 
-  5. Games with longest updation time
 
 ## Contributors
 * [Devansh Sharma](https://github.com/devanshsharma-bigdata/P2-RAWG-Data-Analysis)

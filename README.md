@@ -91,11 +91,13 @@ Each row contains information about one game. There are several columns that hav
 *  Create SparkSession and SparkContext
 
       spark = SparkSession.builder.appName("app").getOrCreate()
+      
       sc = spark.sparkContext
 
 *  Load data into Spark DF.
       
       pathToRead = r"C:\Users\heman\downloads\game_info.csv"
+      
       raw_df = spark.read.csv(pathToRead,header=True,inferSchema=True)
       
 * Create Temporary Views
@@ -105,17 +107,23 @@ Each row contains information about one game. There are several columns that hav
 * Writing Spark SQL Queries
       
       spark.sql("""
-    select name, rating, platform from (
-    select row_number() over(partition by platform order by platform) as num,
-    name,
-    platform,
-    max(rating) over (partition by platform) as rating
-    from filtered_games
-    where platform != '0'
-    order by rating desc) as table
-    where num = 1
-    """
-      ).show(truncate=False)
+      
+      select name, rating, platform from (
+      
+      select row_number() over(partition by platform order by platform) as num,
+      
+      name, platform, max(rating) over (partition by platform) as rating
+      
+      from filtered_games
+      
+      where platform != '0'
+      
+      order by rating desc) as table
+      
+      where num = 1
+      
+      """).show(truncate=False)
+      
 ## Problem Statements
   1. Which is the top most rated games accross all platform.
   2. Which game developer has released the most number of games.

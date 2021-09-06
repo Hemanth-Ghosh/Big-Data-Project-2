@@ -123,6 +123,9 @@ Each row contains information about one game. There are several columns that hav
       where num = 1
       """).show(truncate=False)
       
+## Usage
+
+This project can be used to analyze any API which provides an API key and have batch processing data.
 
 ## Contributors
 * [Devansh Sharma](https://github.com/devanshsharma-bigdata/P2-RAWG-Data-Analysis)

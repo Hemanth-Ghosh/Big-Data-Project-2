@@ -79,13 +79,43 @@ Each row contains information about one game. There are several columns that hav
       pip install pyspark
       pip install findspark
   
-* Download spark and set environmentl variables.
+* Set the Required Spark path
 
-* Import pyspark,findspark.
+      import findspark
+      findspark.init()
+* Import Libraries
 
-*  Create SparkSession.
+      from pyspark.sql import SparkSession
+      from pyspark.sql.functions import to_utc_timestamp, date_format, split, col, round, explode
+      
+*  Create SparkSession and SparkContext
 
-*  Load data into spark.
+      spark = SparkSession.builder.appName("app").getOrCreate()
+      sc = spark.sparkContext
+
+*  Load data into Spark DF.
+      
+      pathToRead = r"C:\Users\heman\downloads\game_info.csv"
+      raw_df = spark.read.csv(pathToRead,header=True,inferSchema=True)
+      
+* Create Temporary Views
+
+      game_df.createOrReplaceTempView("filtered_games")
+      
+* Writing Spark SQL Queries
+      
+      spark.sql("""
+    select name, rating, platform from (
+    select row_number() over(partition by platform order by platform) as num,
+    name,
+    platform,
+    max(rating) over (partition by platform) as rating
+    from filtered_games
+    where platform != '0'
+    order by rating desc) as table
+    where num = 1
+    """
+      ).show(truncate=False)
 ## Problem Statements
   1. Which is the top most rated games accross all platform.
   2. Which game developer has released the most number of games.

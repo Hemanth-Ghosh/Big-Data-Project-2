@@ -90,7 +90,7 @@ Each row contains information about one game. There are several columns that hav
       from pyspark.sql.functions import to_utc_timestamp, date_format, split, col, round, explode
       
 *  Create SparkSession and SparkContext
-
+      
       spark = SparkSession.builder.appName("app").getOrCreate()
       sc = spark.sparkContext
 
@@ -106,20 +106,13 @@ Each row contains information about one game. There are several columns that hav
 * Writing Spark SQL Queries
       
       spark.sql("""
-      select name, rating, platform from (
-      
-      select row_number() over(partition by platform order by platform) as num,
-      
-      name, platform, max(rating) over (partition by platform) as rating
-      
-      from filtered_games
-      
-      where platform != '0'
-      
+      select name, rating, platform from (      
+      select row_number() over(partition by platform order by platform) as num,      
+      name, platform, max(rating) over (partition by platform) as rating      
+      from filtered_games      
+      where platform != '0'      
       order by rating desc) as table
-      
       where num = 1
-      
       """).show(truncate=False)
       
 ## Problem Statements

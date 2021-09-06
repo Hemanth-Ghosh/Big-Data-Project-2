@@ -83,6 +83,7 @@ Each row contains information about one game. There are several columns that hav
 
       import findspark
       findspark.init()
+      
 * Import Libraries
 
       from pyspark.sql import SparkSession
@@ -96,7 +97,6 @@ Each row contains information about one game. There are several columns that hav
 *  Load data into Spark DF
   
       pathToRead = r"C:\Users\heman\downloads\game_info.csv"
-      
       raw_df = spark.read.csv(pathToRead,header=True,inferSchema=True)
       
 * Create Temporary Views
@@ -106,7 +106,6 @@ Each row contains information about one game. There are several columns that hav
 * Writing Spark SQL Queries
       
       spark.sql("""
-      
       select name, rating, platform from (
       
       select row_number() over(partition by platform order by platform) as num,

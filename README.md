@@ -92,9 +92,9 @@ Each row contains information about one game. There are several columns that hav
 
 ## Contributors
 * [Devansh Sharma](https://github.com/devanshsharma-bigdata/P2-RAWG-Data-Analysis)
-* Divya Reddy
+* [Divya Reddy](https://github.com/Divyaredd/BIG_DATA_PROJECT2)
 * [Rajkumar](https://github.com/rajoffl/Analysis-on-RAWG-Dataset)
-* Sailash R
+* [Sailash R](https://github.com/Sailash/Project_2)
 
 ## Dataset Used
 * [RAWG Dataset Document](https://api.rawg.io/docs/)

@@ -93,4 +93,6 @@ Each row contains information about one game. There are several columns that hav
    [RAWG Dataset](https://www.kaggle.com/jummyegg/rawg-game-dataset)
 
 ## License
-[MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)
+This project uses the following license:
+
+  [MIT License](https://github.com/git/git-scm.com/blob/main/MIT-LICENSE.txt)

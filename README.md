@@ -81,9 +81,9 @@ Each row contains information about one game. There are several columns that hav
   5. Games with longest updation time
 
 ## Contributors
-* Devansh Sharma
+* [Devansh Sharma](https://github.com/devanshsharma-bigdata/P2-RAWG-Data-Analysis)
 * Divya Reddy
-* [Rajkumar](https://github.com/rajoffl)
+* [Rajkumar](https://github.com/rajoffl/Analysis-on-RAWG-Dataset)
 * Sailash R
 
 ## Dataset Used
